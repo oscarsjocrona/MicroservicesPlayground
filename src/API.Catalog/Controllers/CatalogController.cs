@@ -21,7 +21,7 @@ namespace API.Catalog.Controllers
         [ProducesResponseType(typeof(IEnumerable<Product>), (int)HttpStatusCode.OK)]
         public async Task<ActionResult<IEnumerable<Product>>> GetProducts()
         {
-            var products = await _repository.GetProducts();
+            var products = await _repository.GetProducts(); 
             return Ok(products);
 
         }
